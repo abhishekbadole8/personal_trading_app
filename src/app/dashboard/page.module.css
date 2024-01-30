@@ -1,0 +1,123 @@
+.Dashboard {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.midContainer {
+    width: 100%;
+    height: auto;
+    background-color: rgb(237, 233, 233);
+}
+
+.leftStockList {
+    width: 29%;
+    height: 100vh;
+    background-color: rgb(212, 212, 161);
+    border-right: 2px solid grey;
+}
+
+.RightMenu {
+    width: 7%;
+    height: 100vh;
+    background-color: yellow;
+}
+
+/*----------- left list ----------------------*/
+
+/* head */
+.stockListHead {
+    display: flex;
+}
+
+.stockListHead div {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: .15rem .5rem;
+    border: 1px solid grey;
+}
+
+.stockListHead div p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .1rem;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.stockListHead div h4 {
+    font-size: .95rem;
+    color: white;
+}
+
+.percentChange {
+    font-size: .75rem;
+}
+
+/* ----- */
+
+/* list numbers */
+
+.stockListNum ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.stockListNum ul li {
+    cursor: pointer;
+    width: 100%;
+    border: 1px solid grey;
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1rem .9rem;
+    color: white;
+}
+
+/* ------- */
+
+/* Symbols */
+
+.stockListSymbols ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.stockListSymbols ul li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid grey;
+    padding: 0 1rem;
+    margin-bottom: .2rem;
+    height: 4rem;
+}
+
+.stockListSymbols ul li h5 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.stockListSymbols ul li p {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    color: red;
+}
+
+.SymbolCurPrice {
+    font-size: .95rem;
+}
+
+.SymbolPriceChange {
+    font-size: .8rem;
+    font-weight: 500;
+}
